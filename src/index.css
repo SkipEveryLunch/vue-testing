@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  .btn{
+    @apply  py-2 px-4 border rounded w-max
+  }
+  .btn-blue{
+    @apply bg-transparent hover:bg-blue-500 text-blue-700 hover:text-white border-blue-500 hover:border-transparent
+  }
+  .btn-blue-loading{
+    @apply bg-blue-500 text-white border-transparent
+  }
+  .btn-red{
+    @apply bg-transparent hover:bg-red-500 text-red-700 hover:text-white border-red-500 hover:border-transparent
+  }
+  .formWrapper{
+    @apply flex items-center m-3
+  }
+  .formInput{
+    @apply w-full border-2 border-gray-200 rounded mx-2 px-2 py-1
+    focus:outline-none focus:border-gray-400
+  }
+  .btnbox-bottom{
+    @apply fixed bottom-0 flex p-3 transform -translate-x-1/2 mb-14 left-1/2
+  }
+}
